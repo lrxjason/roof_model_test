@@ -2,6 +2,6 @@
 
 python setup.py sdist bdist_wheel
 
-python -m twine upload --repository pypi dist/*
+python -m twine upload --skip-existing --repository pypi dist/*
 
 from ruixu_model import predict
